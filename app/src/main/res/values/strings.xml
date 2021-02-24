@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">EasyInvest</string>
+    <string name="amount_to_invest_field">Quanto você gostaria de aplicar? *</string>
+    <string name="amount_to_invest_hint">R$</string>
+    <string name="duedate_field">Qual a data de vencimento do investimento? *</string>
+    <string name="duedate_hint">dia/mês/ano</string>
+    <string name="cdi_percentage_field">Qual o percentual do CDI do investimento? *</string>
+    <string name="cdi_percentage_hint">%</string>
+    <string name="simulate_button">Simular</string>
+    <string name="investment_result_label">Resultado da simulação</string>
+    <string name="yeld_result_label">Rendimento total de %s</string>
+    <string name="initial_value_label">Valor aplicado inicialmente</string>
+    <string name="total_value_label">Valor bruto do investimento</string>
+    <string name="income_value_label">Valor do rendimento</string>
+    <string name="ir_value_label">IR sobre o investimento</string>
+    <string name="discounted_value_label">Valor líquido do investimento</string>
+    <string name="withdraw_date_label">Data de resgate</string>
+    <string name="running_days_label">Dias corridos</string>
+    <string name="monthly_yeld_label">Rendimento mensal</string>
+    <string name="cdi_percentage_label">Percentual do CDI do investimento</string>
+    <string name="year_profitability_label">Rentabilidade anual</string>
+    <string name="profitability_periodic_label">Rentabilidade no período</string>
+    <string name="simulate_again">Simular novamente</string>
+</resources>

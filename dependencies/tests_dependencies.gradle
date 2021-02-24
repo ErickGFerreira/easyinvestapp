@@ -1,0 +1,51 @@
+class TestVersion {
+    static String jUnit5Version = "5.4.2"
+    static String mockk = "1.9.3"
+    static String mockkAndroidVersion = "1.9.3"
+
+    static String coreTesting = "2.1.0"
+
+    static String assertJ = "3.11.1"
+    static String jUnit4 = "4.12"
+    static String mockito = "2.25.0"
+
+    static String coroutineTestVersion = "1.4.2"
+    static String koinTestVersion = "2.2.1"
+    static String nav_version = "2.3.3"
+}
+
+class TestDependency {
+    static String junit5Api = "org.junit.jupiter:junit-jupiter-api:${TestVersion.jUnit5Version}"
+    static String junit5Params = "org.junit.jupiter:junit-jupiter-params:${TestVersion.jUnit5Version}"
+
+    static String mockk = "io.mockk:mockk:${TestVersion.mockk}"
+    static String mockkAndroid =  "io.mockk:mockk-android:${TestVersion.mockkAndroidVersion}"
+
+    static String coreTesting = "androidx.arch.core:core-testing:${TestVersion.coreTesting}"
+
+    static String junit5JupiterEngine = "org.junit.jupiter:junit-jupiter-engine:${TestVersion.jUnit5Version}"
+    static String junit5VintageEngine = "org.junit.vintage:junit-vintage-engine:$TestVersion.jUnit5Version"
+
+    static String coroutineTest = "org.jetbrains.kotlinx:kotlinx-coroutines-test:${TestVersion.coroutineTestVersion}"
+    static String koinTest = "org.koin:koin-test:${TestVersion.koinTestVersion}"
+    static String koinTestJunit5 = "org.koin:koin-test-junit5:${TestVersion.koinTestVersion}"
+    static String navigationTest = "androidx.navigation:navigation-testing:${TestVersion.nav_version}"
+
+}
+
+dependencies {
+    testImplementation TestDependency.junit5Api
+    testImplementation TestDependency.junit5Params
+    testImplementation TestDependency.mockk
+    androidTestImplementation TestDependency.mockkAndroid
+    testImplementation TestDependency.coreTesting
+
+    testRuntimeOnly TestDependency.junit5JupiterEngine
+    testRuntimeOnly TestDependency.junit5VintageEngine
+
+    testImplementation TestDependency.coroutineTest
+    androidTestImplementation TestDependency.koinTest
+    androidTestImplementation TestDependency.koinTestJunit5
+    androidTestImplementation TestDependency.navigationTest
+
+}

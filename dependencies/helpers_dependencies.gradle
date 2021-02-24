@@ -1,0 +1,41 @@
+class HelpersVersion {
+    static String picasso = "2.5.2"
+    static String koin = "2.2.1"
+    static String retrofit = "2.6.4"
+    static String okHttp = "3.12.0"
+    static String jodaTime = "2.9.9"
+
+}
+
+class HelpersDependency {
+    static String picasso = "com.squareup.picasso:picasso:${HelpersVersion.picasso}"
+
+    static String koinAndroid = "org.koin:koin-android:${HelpersVersion.koin}"
+    static String koinScope = "org.koin:koin-androidx-scope:${HelpersVersion.koin}"
+    static String koinViewModel = "org.koin:koin-androidx-viewmodel:${HelpersVersion.koin}"
+
+    static String retrofit = "com.squareup.retrofit2:retrofit:${HelpersVersion.retrofit}"
+    static String retrofitGson = "com.squareup.retrofit2:converter-gson:${HelpersVersion.retrofit}"
+    static String retrofitScalars = "com.squareup.retrofit2:converter-scalars:${HelpersVersion.retrofit}"
+
+    static String okHttp = "com.squareup.okhttp3:okhttp:${HelpersVersion.okHttp}"
+    static String okHttpLogging = "com.squareup.okhttp3:logging-interceptor:${HelpersVersion.okHttp}"
+    static String jodaTime = "joda-time:joda-time:${HelpersVersion.jodaTime}"
+
+
+}
+
+dependencies {
+
+
+    implementation HelpersDependency.jodaTime
+    implementation HelpersDependency.picasso
+    implementation HelpersDependency.koinAndroid
+    implementation HelpersDependency.koinScope
+    implementation HelpersDependency.koinViewModel
+    implementation HelpersDependency.retrofit
+    implementation HelpersDependency.retrofitGson
+    implementation HelpersDependency.retrofitScalars
+    implementation HelpersDependency.okHttp
+    implementation HelpersDependency.okHttpLogging
+}

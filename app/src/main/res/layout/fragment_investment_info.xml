@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="@dimen/default_margin"
+        android:layout_marginVertical="@dimen/default_margin">
+
+        <TextView
+            android:id="@+id/investmentInfoInvestmentResultLabelTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/investment_result_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/investmentInfoInvestmentResultTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/small_margin"
+            android:textColor="@color/black"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/investmentInfoInvestmentResultLabelTv"
+            tools:text="R$ 1.088,68" />
+
+        <TextView
+            android:id="@+id/investmentInfoIncomeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/small_margin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/investmentInfoInvestmentResultTv"
+            tools:text="Rendimento total de R$88,69" />
+
+        <TextView
+            android:id="@+id/investmentInfoInitialValueLabelTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/default_margin"
+            android:text="@string/initial_value_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/investmentInfoIncomeTv" />
+
+        <TextView
+            android:id="@+id/investmentInfoInitialValueTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toEndOf="@id/investmentInfoInitialValueLabelTv"
+            app:layout_constraintTop_toTopOf="@id/investmentInfoInitialValueLabelTv"
+            tools:text="R$ 1.000,00" />
+
+        <TextView
+            android:id="@+id/investmentInfoTotalValueLabelTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/small_margin"
+            android:text="@string/total_value_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/investmentInfoInitialValueLabelTv" />
+
+        <TextView
+            android:id="@+id/investmentInfoTotalValueTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toEndOf="@id/investmentInfoTotalValueLabelTv"
+            app:layout_constraintTop_toTopOf="@id/investmentInfoTotalValueLabelTv"
+            tools:text="R$ 1.088,00" />
+
+        <TextView
+            android:id="@+id/investmentInfoIncomeValueLabelTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/small_margin"
+            android:text="@string/income_value_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/investmentInfoTotalValueLabelTv" />
+
+        <TextView
+            android:id="@+id/investmentInfoIncomeValueTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toEndOf="@id/investmentInfoIncomeValueLabelTv"
+            app:layout_constraintTop_toTopOf="@id/investmentInfoIncomeValueLabelTv"
+            tools:text="R$ 88,00" />
+
+        <TextView
+            android:id="@+id/investmentInfoIRValueLabelTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/small_margin"
+            android:text="@string/ir_value_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/investmentInfoIncomeValueLabelTv" />
+
+        <TextView
+            android:id="@+id/investmentInfoIRValueTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toEndOf="@id/investmentInfoIRValueLabelTv"
+            app:layout_constraintTop_toTopOf="@id/investmentInfoIRValueLabelTv"
+            tools:text="R$ 15,52[17,50%]" />
+
+
+        <TextView
+            android:id="@+id/investmentInfoDiscountedValueLabelTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/small_margin"
+            android:text="@string/discounted_value_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/investmentInfoIRValueLabelTv" />
+
+        <TextView
+            android:id="@+id/investmentInfoDiscountedValueTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toEndOf="@id/investmentInfoDiscountedValueLabelTv"
+            app:layout_constraintTop_toTopOf="@id/investmentInfoDiscountedValueLabelTv"
+            tools:text="R$ 1.073,17" />
+
+        <TextView
+            android:id="@+id/investmentInfoWithdrawDateLabelTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/big_margin"
+            android:text="@string/withdraw_date_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/investmentInfoDiscountedValueLabelTv" />
+
+        <TextView
+            android:id="@+id/investmentInfoWithdrawDateTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toEndOf="@id/investmentInfoWithdrawDateLabelTv"
+            app:layout_constraintTop_toTopOf="@id/investmentInfoWithdrawDateLabelTv"
+            tools:text="27/10/2018" />
+
+        <TextView
+            android:id="@+id/investmentInfoRunningDaysLabelTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/small_margin"
+            android:text="@string/running_days_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/investmentInfoWithdrawDateLabelTv" />
+
+        <TextView
+            android:id="@+id/investmentInfoRunningDaysTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toEndOf="@id/investmentInfoRunningDaysLabelTv"
+            app:layout_constraintTop_toTopOf="@id/investmentInfoRunningDaysLabelTv"
+            tools:text="365" />
+
+        <TextView
+            android:id="@+id/investmentInfoMonthlyYeldLabelTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/small_margin"
+            android:text="@string/monthly_yeld_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/investmentInfoRunningDaysLabelTv" />
+
+        <TextView
+            android:id="@+id/investmentInfoMonthlyYeldTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toEndOf="@id/investmentInfoMonthlyYeldLabelTv"
+            app:layout_constraintTop_toTopOf="@id/investmentInfoMonthlyYeldLabelTv"
+            tools:text="0,57%" />
+
+
+        <TextView
+            android:id="@+id/investmentInfoCDIPercentageLabelTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/small_margin"
+            android:text="@string/cdi_percentage_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/investmentInfoMonthlyYeldLabelTv" />
+
+        <TextView
+            android:id="@+id/investmentInfoCDIPercentageTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toEndOf="@id/investmentInfoCDIPercentageLabelTv"
+            app:layout_constraintTop_toTopOf="@id/investmentInfoCDIPercentageLabelTv"
+            tools:text="123%" />
+
+
+        <TextView
+            android:id="@+id/investmentInfoYearlyProfitabilityLabelTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/small_margin"
+            android:text="@string/year_profitability_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/investmentInfoCDIPercentageLabelTv" />
+
+        <TextView
+            android:id="@+id/investmentInfoYearlyProfitabilityTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toEndOf="@id/investmentInfoYearlyProfitabilityLabelTv"
+            app:layout_constraintTop_toTopOf="@id/investmentInfoYearlyProfitabilityLabelTv"
+            tools:text="7,09%" />
+
+
+        <TextView
+            android:id="@+id/investmentInfoProfitabilityPeriodicLabelTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/small_margin"
+            android:text="@string/profitability_periodic_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/investmentInfoYearlyProfitabilityLabelTv" />
+
+        <TextView
+            android:id="@+id/investmentInfoProfitabilityPeriodicTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toEndOf="@id/investmentInfoProfitabilityPeriodicLabelTv"
+            app:layout_constraintTop_toTopOf="@id/investmentInfoProfitabilityPeriodicLabelTv"
+            tools:text="8,87%" />
+
+
+        <Button
+            android:id="@+id/investmentInfoSimulatAgainButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/easyinvest_button"
+            android:text="@string/simulate_again"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/investmentInfoProfitabilityPeriodicLabelTv"
+            app:layout_constraintVertical_bias="1" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

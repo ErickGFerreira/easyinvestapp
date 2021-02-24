@@ -1,0 +1,74 @@
+class AndroidVersion {
+    static String kotlin = "1.4.10"
+    static String coroutines = "1.3.9"
+    static String navigation = "2.3.1"
+
+    static String constraintLayout = "1.1.3"
+    static String appCompat = "1.0.0"
+    static String legacySupport = "1.0.0"
+    static String material = "1.0.0"
+    static String cardView = "1.0.0"
+    static String browser = "1.2.0"
+    static String multidex = "2.0.0"
+    static String lifecycle = "2.2.0"
+    static String work = "2.4.0"
+    static String installReferrer = "2.1"
+    static String exifInterface = "1.0.0"
+    static String coreKtx = "1.3.2"
+}
+
+class AndroidDependency {
+    static String kotlin = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${AndroidVersion.kotlin}"
+
+    static String coroutinesCore = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${AndroidVersion.coroutines}"
+    static String coroutinesAndroid = "org.jetbrains.kotlinx:kotlinx-coroutines-android:${AndroidVersion.coroutines}"
+
+    static String constraintLayout = "androidx.constraintlayout:constraintlayout:${AndroidVersion.constraintLayout}"
+    static String appCompat = "androidx.appcompat:appcompat:${AndroidVersion.appCompat}"
+
+    static String material = "com.google.android.material:material:${AndroidVersion.material}"
+    static String cardView = "androidx.cardview:cardview:${AndroidVersion.cardView}"
+    static String browser = "androidx.browser:browser:${AndroidVersion.browser}"
+    static String multidex = "androidx.multidex:multidex:${AndroidVersion.multidex}"
+
+    static String navigationFragment = "androidx.navigation:navigation-fragment-ktx:${AndroidVersion.navigation}"
+    static String navigationUi = "androidx.navigation:navigation-ui-ktx:${AndroidVersion.navigation}"
+
+
+    static String legacySupport4 = "androidx.legacy:legacy-support-v4:${AndroidVersion.legacySupport}"
+    static String legacySupport13 = "androidx.legacy:legacy-support-v13:${AndroidVersion.legacySupport}"
+
+    static String lifecycleViewModel = "androidx.lifecycle:lifecycle-viewmodel-ktx:${AndroidVersion.lifecycle}"
+    static String lifecycleXt = "androidx.lifecycle:lifecycle-extensions:${AndroidVersion.lifecycle}"
+    static String lifecycleRuntime = "androidx.lifecycle:lifecycle-runtime:${AndroidVersion.lifecycle}"
+    static String lifecycleCompiler = "androidx.lifecycle:lifecycle-compiler:${AndroidVersion.lifecycle}"
+    static String workRuntime = "androidx.work:work-runtime:${AndroidVersion.work}"
+    static String installReferrer = "com.android.installreferrer:installreferrer:${AndroidVersion.installReferrer}"
+    static String exitInterface = "androidx.exifinterface:exifinterface:${AndroidVersion.exifInterface}"
+
+    static String coreKtx = "androidx.core:core-ktx:${AndroidVersion.coreKtx}"
+}
+
+dependencies {
+    implementation AndroidDependency.kotlin
+    implementation AndroidDependency.constraintLayout
+    implementation AndroidDependency.appCompat
+    implementation AndroidDependency.legacySupport4
+    implementation AndroidDependency.legacySupport13
+    implementation AndroidDependency.material
+    implementation AndroidDependency.cardView
+    implementation AndroidDependency.browser
+    implementation AndroidDependency.multidex
+    implementation AndroidDependency.lifecycleViewModel
+    implementation AndroidDependency.lifecycleXt
+    implementation AndroidDependency.lifecycleRuntime
+    implementation AndroidDependency.workRuntime
+    implementation AndroidDependency.navigationFragment
+    implementation AndroidDependency.navigationUi
+    implementation AndroidDependency.installReferrer
+    implementation AndroidDependency.exitInterface
+    implementation AndroidDependency.coroutinesCore
+    implementation AndroidDependency.coroutinesAndroid
+    implementation AndroidDependency.coreKtx
+    kapt AndroidDependency.lifecycleCompiler
+}
